@@ -5,6 +5,8 @@ app_description = "Purchase Requisition App for Biosimilar Sciences"
 app_email = "mradulmishra010@gmail.com"
 app_license = "mit"
 
+
+
 # Apps
 # ------------------
 
