@@ -5,8 +5,22 @@ app_description = "Purchase Requisition App for Biosimilar Sciences"
 app_email = "mradulmishra010@gmail.com"
 app_license = "mit"
 
-
-
+fixtures = [
+    {"dt": "Custom Field", 
+     "filters": [["dt", "in", ["Bank Account"]]]},
+     {
+        "dt": "Custom Field",
+        "filters": [
+            ["dt", "=", "Sales Invoice Item"]
+        ]
+    },
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["dt", "=", "Sales Invoice"]
+        ]
+    }
+]
 # Apps
 # ------------------
 

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Bank Account-ifsc_code",
+    "doctype": "Custom Field",
+    "dt": "Bank Account",
+    "fieldname": "ifsc_code",
+    "label": "IFSC Code",
+    "fieldtype": "Data",
+    "insert_after": "bank_account_no"
+  },
+  {
+    "name": "Bank Account-ad_code",
+    "doctype": "Custom Field",
+    "dt": "Bank Account",
+    "fieldname": "ad_code",
+    "label": "AD Code",
+    "fieldtype": "Data",
+    "insert_after": "ifsc_code"
+  },
+  {
+    "name": "Bank Account-swift_code",
+    "doctype": "Custom Field",
+    "dt": "Bank Account",
+    "fieldname": "swift_code",
+    "label": "SWIFT Code",
+    "fieldtype": "Data",
+    "insert_after": "ad_code"
+  },
+  {
+    "name": "Sales Invoice Item-origin",
+    "doctype": "Custom Field",
+    "dt": "Sales Invoice Item",
+    "fieldname": "origin",
+    "label": "Origin",
+    "fieldtype": "Data",
+    "insert_after": "item_code"
+  },
+  {
+    "name": "Sales Invoice Item-net_weight",
+    "doctype": "Custom Field",
+    "dt": "Sales Invoice Item",
+    "fieldname": "net_weight",
+    "label": "Net Weight",
+    "fieldtype": "Float",
+    "insert_after": "origin"
+  },
+  {
+    "name": "Sales Invoice-custom_pol",
+    "dt": "Sales Invoice",
+    "doctype": "Custom Field",
+    "fieldname": "custom_pol",
+    "label": "POL",
+    "fieldtype": "Data",
+    "insert_after": "customer"
+  },
+  {
+    "name": "Sales Invoice-custom_pod",
+    "dt": "Sales Invoice",
+    "doctype": "Custom Field",
+    "fieldname": "custom_pod",
+    "label": "POD",
+    "fieldtype": "Data",
+    "insert_after": "custom_pol"
+  },
+  {
+    "name": "Sales Invoice-country_of_origin",
+    "doctype": "Custom Field",
+    "dt": "Sales Invoice",
+    "fieldname": "country_of_origin",
+    "fieldtype": "Data",
+    "label": "Country of Origin",
+    "insert_after": "custom_pol"
+} 
+]

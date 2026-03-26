@@ -1,0 +1,112 @@
+{
+  "doctype": "DocType",
+  "name": "Shipping Box Item",
+  "module": "Purchase Requisition App",
+  "custom": 1,
+  "istable": 1,
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "box_no",
+    "sales_invoice_item",
+    "item_code",
+    "item_name",
+    "description",
+    "hsn_sac",
+    "hazard_type",
+    "country_of_origin",
+    "pack_size",
+    "qty",
+    "billed_qty",
+    "net_weight",
+    "is_fragile"
+  ],
+  "fields": [
+    {
+      "fieldname": "box_no",
+      "label": "Box No",
+      "fieldtype": "Data",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "sales_invoice_item",
+      "label": "Reference Invoice Item",
+      "fieldtype": "Data",
+      "read_only": 1
+    },
+    {
+      "fieldname": "item_code",
+      "label": "Item Code",
+      "fieldtype": "Link",
+      "options": "Item",
+      "in_list_view": 1,
+      "reqd": 1
+    },
+    {
+      "fieldname": "item_name",
+      "label": "Item Name",
+      "fieldtype": "Data",
+      "read_only": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "description",
+      "label": "Description",
+      "fieldtype": "Small Text"
+    },
+    {
+      "fieldname": "hsn_sac",
+      "label": "HSN/SAC",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "country_of_origin",
+      "label": "Country of Origin",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "pack_size",
+      "label": "Pack Size",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "qty",
+      "label": "Shipped Qty",
+      "fieldtype": "Float",
+      "precision": "2",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "billed_qty",
+      "label": "Billed Qty",
+      "fieldtype": "Float",
+      "precision": "2"
+    },
+    {
+      "fieldname": "net_weight",
+      "label": "Net Weight",
+      "fieldtype": "Float",
+      "precision": "2"
+    },
+    {
+      "fieldname": "hazard_type",
+      "label": "Hazard Type",
+      "fieldtype": "Select",
+      "options": "\nNON-HAZARDOUS\nHAZARDOUS",
+      "default": "NON-HAZARDOUS",
+      "in_list_view": 1,
+      "reqd": 1
+    },
+    {
+      "fieldname": "is_fragile",
+      "label": "Is Fragile",
+      "fieldtype": "Check",
+      "default": "0",
+      "in_list_view": 1
+    }
+  ],
+  "permissions": [],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

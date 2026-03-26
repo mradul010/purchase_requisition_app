@@ -1,0 +1,52 @@
+{
+  "doctype": "DocType",
+  "name": "Shipping Box Detail",
+  "module": "Purchase Requisition App",
+  "custom": 1,
+  "istable": 1,
+  "editable_grid": 1,
+  "fields": [
+    {
+      "fieldname": "box_no",
+      "label": "Box No",
+      "fieldtype": "Data",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "weight",
+      "label": "Weight (Kg)",
+      "fieldtype": "Float",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "length",
+      "label": "Length (CM)",
+      "fieldtype": "Float",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "width",
+      "label": "Width (CM)",
+      "fieldtype": "Float",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "height",
+      "label": "Height (CM)",
+      "fieldtype": "Float",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "remarks",
+      "label": "Remarks",
+      "fieldtype": "Data",
+      "reqd": 1,
+      "in_list_view": 1
+    }
+  ]
+}
